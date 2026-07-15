@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — GitAfterIt</title>
+<meta name="description" content="How GitAfterIt handles your data. Short version: your GitHub credentials and content stay on your device.">
+<meta name="theme-color" content="#07060d">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="assets/styles.css">
+<style>
+  .doc { max-width: 760px; margin: 0 auto; padding: 60px 24px 90px; }
+  .doc h1 { font-size: clamp(30px, 5vw, 46px); font-weight: 800; letter-spacing: -1px; }
+  .doc h1 .grad { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .doc .updated { color: var(--muted); margin-top: 8px; font-size: 14px; }
+  .doc h2 { font-size: 22px; margin: 38px 0 10px; }
+  .doc p, .doc li { color: var(--muted); }
+  .doc ul { margin: 10px 0 0 20px; display: grid; gap: 8px; }
+  .doc a { color: var(--cyan); }
+  .doc .lead { color: var(--text); font-size: 18px; margin-top: 18px; }
+</style>
+</head>
+<body>
+
+<div class="bg-orbs"></div>
+<div class="grid-overlay"></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/">
+      <img src="assets/icon.png" alt="GitAfterIt icon">
+      <span>Git<b>AfterIt</b></span>
+    </a>
+    <nav class="nav-links">
+      <a href="/#features">Features</a>
+      <a href="/#screens">Screens</a>
+      <a href="/">Home</a>
+    </nav>
+  </div>
+</header>
+
+<main class="doc">
+  <h1>Privacy <span class="grad">Policy</span></h1>
+  <p class="updated">Last updated: July 15, 2026</p>
+
+  <p class="lead">Short version: GitAfterIt is a client for your own GitHub account. Your credentials and content stay on your device. We don't run analytics servers, sell data, or track you.</p>
+
+  <h2>What GitAfterIt stores</h2>
+  <ul>
+    <li><b>Authentication.</b> When you sign in, GitAfterIt uses GitHub's official OAuth device flow (or a personal access token you provide). Tokens are stored in the iOS <b>Keychain</b> on your device and are never sent anywhere except GitHub.</li>
+    <li><b>Your GitHub content.</b> Repositories, files, pull requests, and other data are fetched directly from GitHub's API to your device and cached locally to make the app fast and available offline. This cache lives on your device.</li>
+    <li><b>App settings.</b> Preferences such as pinned repositories, hosts, and layout are stored locally on your device (and in your private iCloud/app-group container where you enable it).</li>
+  </ul>
+
+  <h2>Who your data is shared with</h2>
+  <ul>
+    <li><b>GitHub.</b> The app talks directly to GitHub's REST and GraphQL APIs using your credentials, subject to <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's Privacy Statement</a>.</li>
+    <li><b>Servers you connect to.</b> If you open an SSH terminal or connect to your own hosts, the app communicates with those machines directly, as you direct it to.</li>
+    <li><b>No one else.</b> GitAfterIt includes no third-party advertising or analytics SDKs. We do not operate a backend that collects your data.</li>
+  </ul>
+
+  <h2>Coding agents</h2>
+  <p>When you launch or monitor Copilot coding agents, GitAfterIt reads agent session data from the machines you connect to (locally or over SSH you control) and, where you use it, from GitHub Copilot. Agent activity is governed by <a href="https://docs.github.com/copilot" target="_blank" rel="noopener">GitHub Copilot's terms and privacy</a>.</p>
+
+  <h2>Data you can remove</h2>
+  <p>Signing out clears your tokens from the Keychain. Deleting the app removes all locally cached content and settings from your device.</p>
+
+  <h2>Children</h2>
+  <p>GitAfterIt is a developer tool and is not directed to children under 13.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we'll update the date above and post the revised policy on this page.</p>
+
+  <h2>Contact</h2>
+  <!-- TODO: replace with your preferred contact address -->
+  <p>Questions about this policy? Email <a href="mailto:privacy@gitafterit.app">privacy@gitafterit.app</a>.</p>
+
+  <p style="margin-top:40px;"><a href="/">← Back to home</a></p>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <a class="brand" href="/"><img src="assets/icon.png" alt="" style="width:26px;height:26px;border-radius:8px;">GitAfterIt</a>
+    <div style="display:flex;gap:22px;flex-wrap:wrap;">
+      <a href="/#features">Features</a>
+      <a href="privacy.html">Privacy</a>
+    </div>
+    <div>© 2026 GitAfterIt</div>
+  </div>
+</footer>
+
+</body>
+</html>
