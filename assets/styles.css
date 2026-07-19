@@ -81,7 +81,7 @@ header {
 }
 .badge .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 10px var(--cyan); }
 .hero h1 { font-size: clamp(38px, 7vw, 74px); line-height: 1.03; font-weight: 800; letter-spacing: -1.5px; }
-.hero h1 .grad { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero h1 .grad, .grad-text { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .hero p.sub { max-width: 640px; margin: 22px auto 0; font-size: clamp(17px, 2.4vw, 21px); color: var(--muted); }
 .hero-cta { display: flex; gap: 14px; justify-content: center; margin-top: 34px; flex-wrap: wrap; }
 .hero-icon {
@@ -145,6 +145,22 @@ section { padding: 76px 0; }
 .stat { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px 14px; }
 .stat .n { font-size: clamp(30px,5vw,44px); font-weight: 800; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .stat .l { color: var(--muted); font-size: 14px; margin-top: 6px; }
+
+/* Companion band */
+.companion-band {
+  background: var(--panel); border: 1px solid var(--border); border-radius: 28px;
+  padding: 48px clamp(24px, 4vw, 56px); text-align: center; position: relative; overflow: hidden;
+}
+.companion-band .eyebrow { text-transform: uppercase; letter-spacing: 3px; font-size: 12px; color: var(--cyan); font-weight: 700; }
+.companion-band h2 { font-size: clamp(26px, 4.5vw, 40px); font-weight: 800; letter-spacing: -1px; margin-top: 12px; }
+.companion-band > p { color: var(--muted); margin: 16px auto 0; max-width: 660px; font-size: 17px; }
+.companion-points {
+  list-style: none; margin: 30px auto 0; max-width: 940px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; text-align: left;
+}
+@media (max-width: 760px) { .companion-points { grid-template-columns: 1fr; } }
+.companion-points li { display: flex; gap: 12px; align-items: flex-start; color: var(--muted); font-size: 15px; }
+.companion-points li b { color: var(--text); }
 
 /* CTA band */
 .cta-band { text-align: center; }
